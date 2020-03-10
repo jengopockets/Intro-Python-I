@@ -36,6 +36,5 @@ print(len(x))
 lis = []
 for i in x:
     lis.append(i*1000)
-    
-    
+        
 print(lis)
