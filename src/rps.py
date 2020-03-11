@@ -15,7 +15,7 @@ def compare_moves(user, cpu):
     if user == cpu:
         print("Tie!")
         return 0
-    elif key in wins and value ==wins[key]:
+    elif key in wins and value == wins[key]:
         print("Winner Winner Chicken Dinner!")
         return 1
     else:
@@ -44,3 +44,5 @@ while True:
             losses += 1
     else:
         print("Can not compute")
+
+print("Thanks for Playing!")

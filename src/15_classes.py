@@ -3,7 +3,9 @@
     
 # YOUR CODE HERE
 class LatLon(object):
+    # Creates a state for LatLon
     latlon_state = dict()
+    # Initializes class passing lat and lon and asigning them to state. 
     def __init__(self, lat, lon):
         self.latlon_state["lat"] = lat
         self.latlon_state["lon"] = lon
@@ -14,8 +16,10 @@ class LatLon(object):
 
 # YOUR CODE HERE
 class Waypoint(LatLon):
+    # Creates a state for LatLon
     waypoint_state = str()
     def __init__(self, name, lat, lon):
+        #passes values up inheritance chain
         super(Waypoint, self).__init__(lat, lon)
         self.waypoint_state = name
 
@@ -30,8 +34,11 @@ class Waypoint(LatLon):
 
 # YOUR CODE HERE
 class Geocache(Waypoint):
+    # Creates a state for LatLon
     geo_state = dict()
+    # Initializes class passing lat and lon and asigning them to state.
     def __init__(self, name, difficulty, size, lat, lon):
+        #passes values up inheritance chain
         super(Geocache, self).__init__(name,lat,lon)
         self.geo_state["difficulty"] = difficulty
         self.geo_state["size"] = size

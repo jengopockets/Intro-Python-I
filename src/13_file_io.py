@@ -21,9 +21,8 @@ f.closed
 # sure that it contains what you expect it to contain
 
 # YOUR CODE HERE
-f = open('src/bar.txt', 'w+')
+with open('src/bar.txt', 'w+') as f:
 
-f.writelines("This is not a textfile")
-f.writelines("this is not a testfile")
-f.writelines("This may be a testfile")
-f.close()
+
+    f.writelines("\n".join(["This is not a textfile ", "This is defiently not a test File ", "Oh god this is a test file!"]))
+    f.close()
