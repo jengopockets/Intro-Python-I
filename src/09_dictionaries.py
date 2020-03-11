@@ -61,8 +61,7 @@ print("Update:", waypoints)
 def value_for_key(d,key1,key2):
     for i in d:
         for k, v in i.items():
-            if k == key1 or k ==key2:
-                print("Location:", k, v)
-
+            if k == key1 or k == key2:
+                print("Location", k, v)
 
 value_for_key(waypoints, "lat", "lon")
